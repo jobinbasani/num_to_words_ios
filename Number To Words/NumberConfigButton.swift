@@ -12,5 +12,14 @@ import UIKit
 
     //MARK: - Properties
     @IBInspectable var isNumberButton:Bool = true
+    
+    //MARK: - Methods
+    func getButtonNumber() -> Int? {
+        return isNumberButton ? Int(titleLabel!.text!) : nil
+    }
+    
+    func getButtonOption() -> String? {
+        return !isNumberButton ? titleLabel!.text! : nil
+    }
 
 }

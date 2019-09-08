@@ -12,18 +12,27 @@ class ViewController: UIViewController {
     
     //MARK: - Properties
     @IBOutlet weak var buttonContainer: UIStackView!
-    
+    @IBOutlet weak var numberLabel: UILabel!
+    @IBOutlet weak var wordLabel: UILabel!
+    private let maxValue:Int = 100000000000000
+    private let numberFormatter = NumberFormatter()
+    private var currentNumber:Int = 0{
+        didSet{
+            updateLabels()
+        }
+    }
 
     //MARK: - Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
+        numberFormatter.numberStyle = .spellOut
         for numberConfigButton in getNumberConfigButtons(){            
             numberConfigButton.addTarget(self, action: #selector(onButtonClick(sender:)), for: .touchUpInside)
         }
     }
     //MARK: - Event handlers
     @objc func onButtonClick(sender: NumberConfigButton){
-        print(sender.titleLabel?.text ?? "No Title")
+        sender.isNumberButton ? handleNumberButtonClick(sender) : handleOptionButtonClick(sender)
     }
     //MARK: - Private functions
     private func getChildViewsOf<T: UIView>(view: UIView) -> [T] {
@@ -38,8 +47,30 @@ class ViewController: UIViewController {
         return subviews
     }
     
+    private func handleNumberButtonClick(_ sender:NumberConfigButton){
+        guard let number = sender.getButtonNumber() else {
+            fatalError("Failed to read numeric value of button!")
+        }
+        let newNumber = (currentNumber * 10) + number
+        if(newNumber < maxValue){
+            currentNumber = newNumber
+        }
+    }
+    
+    private func handleOptionButtonClick(_ sender:NumberConfigButton){
+        guard let option = sender.getButtonOption() else{
+            fatalError("Failed to read button option!")
+        }
+        print("OPtion is \(option)")
+    }
+    
     private func getNumberConfigButtons() -> [NumberConfigButton] {
         return getChildViewsOf(view: buttonContainer)
+    }
+    
+    private func updateLabels(){
+        numberLabel.text = String(currentNumber)
+        wordLabel .text = numberFormatter.string(from: NSNumber(value: currentNumber))
     }
 
 }

@@ -400,6 +400,8 @@
                     </view>
                     <connections>
                         <outlet property="buttonContainer" destination="wI0-nM-zEn" id="csA-YU-k9s"/>
+                        <outlet property="numberLabel" destination="UKM-uZ-fcf" id="QZG-o9-vf3"/>
+                        <outlet property="wordLabel" destination="apT-hg-3vE" id="Av5-Fa-i7H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
