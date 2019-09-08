@@ -70,6 +70,12 @@ class ViewController: UIViewController {
             currentNumber = currentNumber / 10
         case "CLEAR":
             currentNumber = 0
+        case "COPY":
+            UIPasteboard.general.string = wordLabel.text!
+            let alertbox = UIAlertController(title: nil, message: "Copied to clipboard!", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alertbox.addAction(okAction)
+            self.present(alertbox, animated: true, completion: nil)
         case "SPEAK":
             let utterance = AVSpeechUtterance(string: wordLabel.text!)
             utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
