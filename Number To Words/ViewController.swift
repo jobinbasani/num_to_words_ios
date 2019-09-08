@@ -80,6 +80,10 @@ class ViewController: UIViewController {
             let utterance = AVSpeechUtterance(string: wordLabel.text!)
             utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
             synth.speak(utterance)
+        case "SHARE":
+            let activityViewController = UIActivityViewController(activityItems: [wordLabel.text!], applicationActivities: nil)
+            activityViewController.popoverPresentationController?.sourceView = self.view
+            self.present(activityViewController, animated: true, completion: nil)
         default:
             print("Invalid option!")
         }
