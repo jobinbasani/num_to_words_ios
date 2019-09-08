@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -16,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var wordLabel: UILabel!
     private let maxValue:Int = 100000000000000
     private let numberFormatter = NumberFormatter()
+    private let synth = AVSpeechSynthesizer()
     private var currentNumber:Int = 0{
         didSet{
             updateLabels()
@@ -26,6 +28,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         numberFormatter.numberStyle = .spellOut
+        wordLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
+        wordLabel.numberOfLines = 0
         for numberConfigButton in getNumberConfigButtons(){            
             numberConfigButton.addTarget(self, action: #selector(onButtonClick(sender:)), for: .touchUpInside)
         }
@@ -61,7 +65,18 @@ class ViewController: UIViewController {
         guard let option = sender.getButtonOption() else{
             fatalError("Failed to read button option!")
         }
-        print("OPtion is \(option)")
+        switch option.uppercased() {
+        case "DELETE":
+            currentNumber = currentNumber / 10
+        case "CLEAR":
+            currentNumber = 0
+        case "SPEAK":
+            let utterance = AVSpeechUtterance(string: wordLabel.text!)
+            utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+            synth.speak(utterance)
+        default:
+            print("Invalid option!")
+        }
     }
     
     private func getNumberConfigButtons() -> [NumberConfigButton] {
@@ -70,7 +85,7 @@ class ViewController: UIViewController {
     
     private func updateLabels(){
         numberLabel.text = String(currentNumber)
-        wordLabel .text = numberFormatter.string(from: NSNumber(value: currentNumber))
+        wordLabel .text = numberFormatter.string(from: NSNumber(value: currentNumber))?.capitalized
     }
 
 }
