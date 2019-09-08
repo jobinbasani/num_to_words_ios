@@ -73,7 +73,7 @@ class ViewController: UIViewController {
         case "COPY":
             UIPasteboard.general.string = wordLabel.text!
             let alertbox = UIAlertController(title: nil, message: "Copied to clipboard!", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
             alertbox.addAction(okAction)
             self.present(alertbox, animated: true, completion: nil)
         case "SPEAK":
