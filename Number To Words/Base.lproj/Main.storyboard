@@ -40,7 +40,7 @@
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKM-uZ-fcf" userLabel="NumberLabel">
                                                                 <rect key="frame" x="25" y="0.0" width="364" height="174.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                                                <nil key="textColor"/>
+                                                                <color key="textColor" red="0.5568627451" green="0.023529411760000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e4c-cG-UD7">
@@ -54,7 +54,7 @@
                                                     </stackView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ec7-IL-jx0" userLabel="Border1">
                                                         <rect key="frame" x="0.0" y="174.5" width="414" height="1"/>
-                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" red="0.5568627451" green="0.023529411760000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="mdC-24-4G7"/>
                                                         </constraints>
@@ -72,7 +72,7 @@
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zero" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apT-hg-3vE" userLabel="WordsLabel">
                                                                 <rect key="frame" x="25" y="0.0" width="364" height="232.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                                                <nil key="textColor"/>
+                                                                <color key="textColor" red="0.5568627451" green="0.023529411760000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQQ-nE-2Zj">
@@ -86,7 +86,7 @@
                                                     </stackView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qnC-jN-QK5" userLabel="Border2">
                                                         <rect key="frame" x="0.0" y="408" width="414" height="1"/>
-                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="QHA-Yb-2hx"/>
                                                         </constraints>
@@ -118,44 +118,60 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x03-CC-uVC" customClass="NumberConfigButton" customModule="Number_To_Words" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="103" height="101.5"/>
+                                                                <color key="backgroundColor" red="0.5568627451" green="0.023529411760000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                                <state key="normal" title="1"/>
+                                                                <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                                <state key="normal" title="1">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kPD-FA-32g" userLabel="Row1Border1">
                                                                 <rect key="frame" x="103" y="0.0" width="1" height="101.5"/>
-                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="1" id="23I-og-END"/>
                                                                 </constraints>
                                                             </view>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESL-cZ-P2h" userLabel="2" customClass="NumberConfigButton" customModule="Number_To_Words" customModuleProvider="target">
                                                                 <rect key="frame" x="104" y="0.0" width="102.5" height="101.5"/>
+                                                                <color key="backgroundColor" red="0.5568627451" green="0.023529411760000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                                <state key="normal" title="2"/>
+                                                                <color key="tintColor" red="0.84705882349999995" green="0.42352941179999998" blue="0.43921568630000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="2">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n9R-5Q-I91" userLabel="Row1Border2">
                                                                 <rect key="frame" x="206.5" y="0.0" width="1" height="101.5"/>
-                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="1" id="cWm-sy-Dpf"/>
                                                                 </constraints>
                                                             </view>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1T-u0-mcX" userLabel="3" customClass="NumberConfigButton" customModule="Number_To_Words" customModuleProvider="target">
                                                                 <rect key="frame" x="207.5" y="0.0" width="103" height="101.5"/>
+                                                                <color key="backgroundColor" red="0.5568627451" green="0.023529411760000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                                <state key="normal" title="3"/>
+                                                                <color key="tintColor" red="0.84705882349999995" green="0.42352941179999998" blue="0.43921568630000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="3">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZ0-Uw-ZS2" userLabel="Row1Border3">
                                                                 <rect key="frame" x="310.5" y="0.0" width="1" height="101.5"/>
-                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="1" id="o5l-jY-yBI"/>
                                                                 </constraints>
                                                             </view>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQA-fL-lD3" userLabel="DEL" customClass="NumberConfigButton" customModule="Number_To_Words" customModuleProvider="target">
                                                                 <rect key="frame" x="311.5" y="0.0" width="102.5" height="101.5"/>
+                                                                <color key="backgroundColor" red="0.5568627451" green="0.023529411760000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                <state key="normal" title="DELETE"/>
+                                                                <color key="tintColor" red="0.84705882349999995" green="0.42352941179999998" blue="0.43921568630000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="DELETE">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isNumberButton" value="NO"/>
                                                                 </userDefinedRuntimeAttributes>
@@ -172,7 +188,7 @@
                                                     </stackView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCd-Jc-wSn" userLabel="Border3">
                                                         <rect key="frame" x="0.0" y="101.5" width="414" height="1"/>
-                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="hDU-o6-ZG4"/>
                                                         </constraints>
@@ -182,44 +198,60 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EO0-oa-HkZ" userLabel="4" customClass="NumberConfigButton" customModule="Number_To_Words" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="103" height="101"/>
+                                                                <color key="backgroundColor" red="0.5568627451" green="0.023529411760000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                                <state key="normal" title="4"/>
+                                                                <color key="tintColor" red="0.84705882349999995" green="0.42352941179999998" blue="0.43921568630000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="4">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g02-AL-O4W" userLabel="Row2Border1">
                                                                 <rect key="frame" x="103" y="0.0" width="1" height="101"/>
-                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="1" id="QuC-Oi-jPJ"/>
                                                                 </constraints>
                                                             </view>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaR-41-9IO" userLabel="5" customClass="NumberConfigButton" customModule="Number_To_Words" customModuleProvider="target">
                                                                 <rect key="frame" x="104" y="0.0" width="102.5" height="101"/>
+                                                                <color key="backgroundColor" red="0.5568627451" green="0.023529411760000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                                <state key="normal" title="5"/>
+                                                                <color key="tintColor" red="0.84705882349999995" green="0.42352941179999998" blue="0.43921568630000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="5">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Isl-hy-S1F" userLabel="Row2Border2">
                                                                 <rect key="frame" x="206.5" y="0.0" width="1" height="101"/>
-                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="1" id="Ef4-6g-WZE"/>
                                                                 </constraints>
                                                             </view>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TW-SS-Nnf" userLabel="6" customClass="NumberConfigButton" customModule="Number_To_Words" customModuleProvider="target">
                                                                 <rect key="frame" x="207.5" y="0.0" width="103" height="101"/>
+                                                                <color key="backgroundColor" red="0.5568627451" green="0.023529411760000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                                <state key="normal" title="6"/>
+                                                                <color key="tintColor" red="0.84705882349999995" green="0.42352941179999998" blue="0.43921568630000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="6">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VaI-1G-MyG" userLabel="Row2Border3">
                                                                 <rect key="frame" x="310.5" y="0.0" width="1" height="101"/>
-                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="1" id="GLM-bZ-d2M"/>
                                                                 </constraints>
                                                             </view>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qX9-wg-UU5" userLabel="CLR" customClass="NumberConfigButton" customModule="Number_To_Words" customModuleProvider="target">
                                                                 <rect key="frame" x="311.5" y="0.0" width="102.5" height="101"/>
+                                                                <color key="backgroundColor" red="0.5568627451" green="0.023529411760000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                <state key="normal" title="CLEAR"/>
+                                                                <color key="tintColor" red="0.84705882349999995" green="0.42352941179999998" blue="0.43921568630000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="CLEAR">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isNumberButton" value="NO"/>
                                                                 </userDefinedRuntimeAttributes>
@@ -236,7 +268,7 @@
                                                     </stackView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOV-aC-Qbo" userLabel="Border4">
                                                         <rect key="frame" x="0.0" y="203.5" width="414" height="1"/>
-                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="KQA-aI-ku4"/>
                                                         </constraints>
@@ -246,44 +278,60 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0p-oP-vhZ" userLabel="7" customClass="NumberConfigButton" customModule="Number_To_Words" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="103" height="101.5"/>
+                                                                <color key="backgroundColor" red="0.5568627451" green="0.023529411760000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                                <state key="normal" title="7"/>
+                                                                <color key="tintColor" red="0.84705882349999995" green="0.42352941179999998" blue="0.43921568630000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="7">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJE-h6-WNH" userLabel="Row3Border1">
                                                                 <rect key="frame" x="103" y="0.0" width="1" height="101.5"/>
-                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="1" id="xhd-3x-15g"/>
                                                                 </constraints>
                                                             </view>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Rj-LJ-bkN" userLabel="8" customClass="NumberConfigButton" customModule="Number_To_Words" customModuleProvider="target">
                                                                 <rect key="frame" x="104" y="0.0" width="102.5" height="101.5"/>
+                                                                <color key="backgroundColor" red="0.5568627451" green="0.023529411760000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                                <state key="normal" title="8"/>
+                                                                <color key="tintColor" red="0.84705882349999995" green="0.42352941179999998" blue="0.43921568630000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="8">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vgu-nn-7zM" userLabel="Row3Border2">
                                                                 <rect key="frame" x="206.5" y="0.0" width="1" height="101.5"/>
-                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="1" id="gAR-D1-XeK"/>
                                                                 </constraints>
                                                             </view>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgq-bY-BjJ" userLabel="9" customClass="NumberConfigButton" customModule="Number_To_Words" customModuleProvider="target">
                                                                 <rect key="frame" x="207.5" y="0.0" width="103" height="101.5"/>
+                                                                <color key="backgroundColor" red="0.5568627451" green="0.023529411760000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                                <state key="normal" title="9"/>
+                                                                <color key="tintColor" red="0.84705882349999995" green="0.42352941179999998" blue="0.43921568630000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="9">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pa-Ox-wj0" userLabel="Row3Border3">
                                                                 <rect key="frame" x="310.5" y="0.0" width="1" height="101.5"/>
-                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="1" id="iPl-4R-nMk"/>
                                                                 </constraints>
                                                             </view>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ski-PG-Tkn" userLabel="Share" customClass="NumberConfigButton" customModule="Number_To_Words" customModuleProvider="target">
                                                                 <rect key="frame" x="311.5" y="0.0" width="102.5" height="101.5"/>
+                                                                <color key="backgroundColor" red="0.5568627451" green="0.023529411760000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                <state key="normal" title="SHARE"/>
+                                                                <color key="tintColor" red="0.84705882349999995" green="0.42352941179999998" blue="0.43921568630000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="SHARE">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isNumberButton" value="NO"/>
                                                                 </userDefinedRuntimeAttributes>
@@ -300,7 +348,7 @@
                                                     </stackView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="keD-5T-0UF" userLabel="Border5">
                                                         <rect key="frame" x="0.0" y="306" width="414" height="1"/>
-                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="IsM-wc-pAk"/>
                                                         </constraints>
@@ -310,49 +358,66 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHq-1J-a0b" userLabel="COPY" customClass="NumberConfigButton" customModule="Number_To_Words" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="103" height="101"/>
+                                                                <color key="backgroundColor" red="0.5568627451" green="0.023529411760000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                <state key="normal" title="COPY"/>
+                                                                <color key="tintColor" red="0.84705882349999995" green="0.42352941179999998" blue="0.43921568630000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="COPY">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isNumberButton" value="NO"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPY-DI-XmX" userLabel="Row4Border1">
                                                                 <rect key="frame" x="103" y="0.0" width="1" height="101"/>
-                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="1" id="Vhl-zn-fys"/>
                                                                 </constraints>
                                                             </view>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUh-2X-tzO" userLabel="0" customClass="NumberConfigButton" customModule="Number_To_Words" customModuleProvider="target">
                                                                 <rect key="frame" x="104" y="0.0" width="102.5" height="101"/>
+                                                                <color key="backgroundColor" red="0.5568627451" green="0.023529411760000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                                <state key="normal" title="0"/>
+                                                                <color key="tintColor" red="0.84705882349999995" green="0.42352941179999998" blue="0.43921568630000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="0">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kFb-jb-HrO" userLabel="Row4Border2">
                                                                 <rect key="frame" x="206.5" y="0.0" width="1" height="101"/>
-                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="1" id="lHv-9p-k5K"/>
                                                                 </constraints>
                                                             </view>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8g-a1-eSi" userLabel="SPEAK" customClass="NumberConfigButton" customModule="Number_To_Words" customModuleProvider="target">
                                                                 <rect key="frame" x="207.5" y="0.0" width="103" height="101"/>
+                                                                <color key="backgroundColor" red="0.5568627451" green="0.023529411760000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                <state key="normal" title="SPEAK"/>
+                                                                <color key="tintColor" red="0.84705882349999995" green="0.42352941179999998" blue="0.43921568630000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="SPEAK">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isNumberButton" value="NO"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ym-B6-DkL" userLabel="Row4Border3">
                                                                 <rect key="frame" x="310.5" y="0.0" width="1" height="101"/>
-                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="1" id="McK-jy-hZb"/>
                                                                 </constraints>
                                                             </view>
                                                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XxK-au-bkt" userLabel="EMPTY" customClass="NumberConfigButton" customModule="Number_To_Words" customModuleProvider="target">
                                                                 <rect key="frame" x="311.5" y="0.0" width="102.5" height="101"/>
+                                                                <color key="backgroundColor" red="0.5568627451" green="0.023529411760000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                <color key="tintColor" red="0.84705882349999995" green="0.42352941179999998" blue="0.43921568630000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isNumberButton" value="NO"/>
                                                                 </userDefinedRuntimeAttributes>
@@ -369,7 +434,7 @@
                                                     </stackView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ia-iV-ojD" userLabel="Border6">
                                                         <rect key="frame" x="0.0" y="408" width="414" height="1"/>
-                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="9cg-Jh-l4A"/>
                                                         </constraints>
