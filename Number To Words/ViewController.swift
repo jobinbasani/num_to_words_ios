@@ -81,7 +81,7 @@ class ViewController: UIViewController {
         case "CLEAR":
             currentNumber = 0
         case "COPY":
-            UIPasteboard.general.string = wordLabel.text!
+            UIPasteboard.general.string = "\(numberLabel.text!) - \(wordLabel.text!)"
             let alertbox = UIAlertController(title: nil, message: "Copied to clipboard!", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
             alertbox.addAction(okAction)
