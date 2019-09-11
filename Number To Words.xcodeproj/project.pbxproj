@@ -15,6 +15,7 @@
 		0BF04C1223248C3F000922D1 /* Number_To_WordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF04C1123248C3F000922D1 /* Number_To_WordsTests.swift */; };
 		0BF04C1D23248C3F000922D1 /* Number_To_WordsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF04C1C23248C3F000922D1 /* Number_To_WordsUITests.swift */; };
 		0BF04C2B2324D914000922D1 /* NumberConfigButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF04C2A2324D914000922D1 /* NumberConfigButton.swift */; };
+		0BF04C2D23288D6A000922D1 /* ColorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF04C2C23288D6A000922D1 /* ColorConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0BF04C1C23248C3F000922D1 /* Number_To_WordsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number_To_WordsUITests.swift; sourceTree = "<group>"; };
 		0BF04C1E23248C3F000922D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BF04C2A2324D914000922D1 /* NumberConfigButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberConfigButton.swift; sourceTree = "<group>"; };
+		0BF04C2C23288D6A000922D1 /* ColorConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				0BF04C0323248C3F000922D1 /* Assets.xcassets */,
 				0BF04C0523248C3F000922D1 /* LaunchScreen.storyboard */,
 				0BF04C0823248C3F000922D1 /* Info.plist */,
+				0BF04C2C23288D6A000922D1 /* ColorConfig.swift */,
 			);
 			path = "Number To Words";
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BF04BFF23248C3E000922D1 /* ViewController.swift in Sources */,
+				0BF04C2D23288D6A000922D1 /* ColorConfig.swift in Sources */,
 				0BF04BFD23248C3E000922D1 /* AppDelegate.swift in Sources */,
 				0BF04C2B2324D914000922D1 /* NumberConfigButton.swift in Sources */,
 			);

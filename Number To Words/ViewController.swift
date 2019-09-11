@@ -15,9 +15,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonContainer: UIStackView!
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var wordLabel: UILabel!
+    @IBOutlet weak var mainBorder: UIView!
+    
+    private let defaultColorIndexKey = "DEFAULT_COLOR_INDEX"
     private let maxValue:Int = 100000000000000
     private let numberFormatter = NumberFormatter()
     private let synth = AVSpeechSynthesizer()
+    private let colors = [ColorConfig(name:"red", primary: "#c63d4d", tint: "#f55c5f"), ColorConfig(name: "violet", primary: "#45285b", tint: "#784f98"), ColorConfig(name: "green", primary: "#1b7f63", tint: "#58bfa2"), ColorConfig(name: "pink", primary: "#b64286", tint: "#f45690")]
+    private var defaultColorIndex:Int = 0 {
+        didSet{
+            updateColors()
+        }
+    }
     private var currentNumber:Int = 0{
         didSet{
             updateLabels()
@@ -33,6 +42,7 @@ class ViewController: UIViewController {
         for numberConfigButton in getNumberConfigButtons(){            
             numberConfigButton.addTarget(self, action: #selector(onButtonClick(sender:)), for: .touchUpInside)
         }
+        lookupSavedColorIndex()
     }
     //MARK: - Event handlers
     @objc func onButtonClick(sender: NumberConfigButton){
@@ -84,6 +94,9 @@ class ViewController: UIViewController {
             let activityViewController = UIActivityViewController(activityItems: [wordLabel.text!], applicationActivities: nil)
             activityViewController.popoverPresentationController?.sourceView = self.view
             self.present(activityViewController, animated: true, completion: nil)
+        case "COLOR":
+            let newColorIndex = defaultColorIndex + 1
+            defaultColorIndex = newColorIndex < colors.count ? newColorIndex : 0
         default:
             print("Invalid option!")
         }
@@ -96,6 +109,21 @@ class ViewController: UIViewController {
     private func updateLabels(){
         numberLabel.text = String(currentNumber)
         wordLabel .text = numberFormatter.string(from: NSNumber(value: currentNumber))?.capitalized
+    }
+    
+    private func updateColors(){
+        for numberConfigButton in getNumberConfigButtons(){
+            numberConfigButton.backgroundColor = colors[defaultColorIndex].getPrimaryUIColor()
+            numberConfigButton.tintColor = colors[defaultColorIndex].getTintUIColor()
+        }
+        mainBorder.backgroundColor = colors[defaultColorIndex].getPrimaryUIColor()
+        numberLabel.textColor = colors[defaultColorIndex].getPrimaryUIColor()
+        wordLabel.textColor = colors[defaultColorIndex].getPrimaryUIColor()
+        UserDefaults.standard.set(defaultColorIndex, forKey: defaultColorIndexKey)
+    }
+    
+    private func lookupSavedColorIndex() {
+        defaultColorIndex = UserDefaults.standard.integer(forKey: defaultColorIndexKey)
     }
 
 }

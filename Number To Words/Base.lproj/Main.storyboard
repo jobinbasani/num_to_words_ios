@@ -410,12 +410,12 @@
                                                                     <constraint firstAttribute="width" constant="1" id="McK-jy-hZb"/>
                                                                 </constraints>
                                                             </view>
-                                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XxK-au-bkt" userLabel="EMPTY" customClass="NumberConfigButton" customModule="Number_To_Words" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XxK-au-bkt" userLabel="Color" customClass="NumberConfigButton" customModule="Number_To_Words" customModuleProvider="target">
                                                                 <rect key="frame" x="311.5" y="0.0" width="102.5" height="101"/>
                                                                 <color key="backgroundColor" red="0.5568627451" green="0.023529411760000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <color key="tintColor" red="0.84705882349999995" green="0.42352941179999998" blue="0.43921568630000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <state key="normal">
+                                                                <state key="normal" title="COLOR">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
@@ -469,6 +469,7 @@
                     </view>
                     <connections>
                         <outlet property="buttonContainer" destination="wI0-nM-zEn" id="csA-YU-k9s"/>
+                        <outlet property="mainBorder" destination="ec7-IL-jx0" id="EO5-9B-TMT"/>
                         <outlet property="numberLabel" destination="UKM-uZ-fcf" id="QZG-o9-vf3"/>
                         <outlet property="wordLabel" destination="apT-hg-3vE" id="Av5-Fa-i7H"/>
                     </connections>
